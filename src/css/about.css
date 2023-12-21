@@ -1,0 +1,110 @@
+.about {
+    padding-top: 80px;
+    padding-bottom: 116px;
+}
+.about-title {
+    color: var(--white);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+}
+.about-title-accent {
+    color: var(--yellow);
+}
+.about-container {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 504px;
+}
+.about-sub-title {
+    color: var(--white);
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+.about-description {
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    margin-top: 40px;
+}
+.about-numbers {
+    margin-top: 25px;
+}
+.about-number-list {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    margin-top: 40px;
+}
+.about-number-text {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-top: 15px;
+}
+.about-number-text-accent {
+    color: var(--yellow);
+}
+.about-img {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .about {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .about-container {
+        max-width: 690px;
+        display: flex;
+        gap: 30px;
+    }
+    .about-content {
+        width: 445px;
+    }
+    .about-sub-title {
+        text-align: start;
+    }
+    .about-description {
+        text-align: start;
+    }
+    .about-numbers {
+        margin-top: 0;
+        width: 220px;
+    }
+    .about-numbers .about-sub-title {
+        width: 230px;
+    }
+    .about-number-list {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .about-container {
+        max-width: 1110px;
+    }
+    .about-img {
+        display: block;
+    }
+}

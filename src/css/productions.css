@@ -1,0 +1,118 @@
+.productions {
+    padding-bottom: 80px;
+}
+.productions-title {
+    color: var(--white);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.productions-title-accent {
+    color: var(--yellow);
+}
+.productions-swiper-container {
+    max-width: 510px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.productions-image-container {
+    position: relative;
+}
+.productions-name {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    transition: all 250ms ease-in;
+}
+.productions-date {
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    transform-origin: top left;
+    transition: all 250ms ease-in;
+}
+.productions-button {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--yellow);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 250ms ease-in;
+}
+
+.productions-image-container:hover .productions-name,
+.productions-image-container:focus .productions-name,
+.productions-image-container:hover .productions-date, 
+.productions-image-container:focus .productions-date {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.productions-image-container:hover .productions-button,
+.productions-image-container:focus .productions-button {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (min-width: 768px) {
+    .productions {
+        padding-bottom: 110px;
+    }
+    .productions-swiper-container {
+        max-width: 690px;
+    }
+}
+
+@media (min-width: 992px) {
+    .productions {
+        padding-bottom: 150px;
+    }
+    .productions-title {
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .productions {
+        padding-bottom: 100px;
+    }
+    .productions-swiper-container {
+        max-width: 1290px;
+        overflow: visible;
+        margin: 0;
+        padding-left: 118px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .productions-swiper-container {
+        max-width: 1290px;
+        overflow: visible;
+        margin: 0;
+        padding-left: 118px;
+    }
+}
+

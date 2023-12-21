@@ -1,0 +1,36 @@
+.footer {
+    padding-bottom: 30px;
+}
+.footer-line {
+    height: 1px;
+    background-color: #565656;;
+}
+.footer-content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-desc {
+    max-width: 307px;
+    color: #989898;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.footer-devepoped {
+    color: #989898;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: end;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        margin: 0 auto;
+        max-width: 690px;
+    }
+    .footer-desc {
+        width: auto;
+    }
+}

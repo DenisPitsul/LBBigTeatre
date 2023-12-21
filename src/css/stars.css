@@ -1,0 +1,64 @@
+.stars {
+    background-image: url(../img/stars/stars-background-small.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+.stars-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.stars-years {
+    display: inline-block;
+    color: var(--yellow);
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 4.2px;
+    text-transform: uppercase;
+}
+.stars-text {
+    width: 330px;
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+    .stars {
+        background-image: url(../img/stars/stars-background-medium.png);
+    }
+    .stars-text {
+        width: 388px;
+        font-size: 29px;
+    }
+}
+
+@media (min-width: 992px) {
+    .stars {
+        background-image: url(../img/stars/stars-background-large.png);
+    }
+    .stars-container {
+        gap: 58px;
+    }
+    .stars-text {
+        width: 450px;
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 1111px) {
+    .stars {
+        background-image: url(../img/stars/stars-background-extra-large.png);
+        width: 1111px;
+        margin: 0 auto;
+    }
+    .stars-container {
+        gap: 103px;
+    }
+}
